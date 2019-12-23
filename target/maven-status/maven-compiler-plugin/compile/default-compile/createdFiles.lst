@@ -1,0 +1,5 @@
+AppPages\WidgetsPage_ToolsQA.class
+TestCases\TestBase.class
+TestCases\WidgetPage_TestCases.class
+TestCases\HomePage_TestCases.class
+AppPages\HomePage_ToolsQA.class

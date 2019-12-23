@@ -1,0 +1,156 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=11564, tid=0x0000000000003de4
+#
+# JRE version:  (8.0_144-b01) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.144-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002f0d800):  JavaThread "Unknown thread" [_thread_in_vm, id=15844, stack(0x0000000004ea0000,0x0000000004fa0000)]
+
+Stack: [0x0000000004ea0000,0x0000000004fa0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002f0d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=15844, stack(0x0000000004ea0000,0x0000000004fa0000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 28672K, used 491K [0x00000000e0000000, 0x00000000e2000000, 0x0000000100000000)
+  eden space 24576K, 2% used [0x00000000e0000000,0x00000000e007ae20,0x00000000e1800000)
+  from space 4096K, 0% used [0x00000000e1c00000,0x00000000e1c00000,0x00000000e2000000)
+  to   space 4096K, 0% used [0x00000000e1800000,0x00000000e1800000,0x00000000e1c00000)
+ ParOldGen       total 65536K, used 0K [0x00000000a0000000, 0x00000000a4000000, 0x00000000e0000000)
+  object space 65536K, 0% used [0x00000000a0000000,0x00000000a0000000,0x00000000a4000000)
+ Metaspace       used 770K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 75K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000014360000,0x0000000014670000] byte_map_base: 0x0000000013e60000
+
+Marking Bits: (ParMarkBitMap*) 0x00000000738ed850
+ Begin Bits: [0x0000000014c70000, 0x0000000016470000)
+ End Bits:   [0x0000000016470000, 0x0000000017c70000)
+
+Polling page: 0x0000000002de0000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000004fa0000, 0x0000000005210000, 0x0000000013fa0000]
+ total_blobs=58 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.133 loading class java/lang/Short
+Event: 0.133 loading class java/lang/Short done
+Event: 0.133 loading class java/lang/Integer
+Event: 0.133 loading class java/lang/Integer done
+Event: 0.133 loading class java/lang/Long
+Event: 0.133 loading class java/lang/Long done
+Event: 0.134 loading class java/lang/NullPointerException
+Event: 0.134 loading class java/lang/NullPointerException done
+Event: 0.134 loading class java/lang/ArithmeticException
+Event: 0.135 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff685220000 - 0x00007ff685257000 	C:\Program Files\Java\jdk1.8.0_144\jre\bin\java.exe
+0x00007ff8c0b50000 - 0x00007ff8c0d30000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff8be740000 - 0x00007ff8be7ee000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff8bd830000 - 0x00007ff8bda96000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x0000000077d80000 - 0x0000000077e15000 	C:\WINDOWS\System32\SYSFER.DLL
+0x00007ff8be690000 - 0x00007ff8be731000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff8c0910000 - 0x00007ff8c09ad000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff8be610000 - 0x00007ff8be66b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff8bea80000 - 0x00007ff8beb9f000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff8bec20000 - 0x00007ff8bedaf000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff8bd810000 - 0x00007ff8bd830000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff8be050000 - 0x00007ff8be078000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff8bdaa0000 - 0x00007ff8bdc33000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff8bd770000 - 0x00007ff8bd80b000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff8bdd50000 - 0x00007ff8bde44000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff8ac750000 - 0x00007ff8ac9b9000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.16299.1504_none_0f88b60a5a6c73b1\COMCTL32.dll
+0x00007ff8be300000 - 0x00007ff8be606000 	C:\WINDOWS\System32\combase.dll
+0x00007ff8bcf50000 - 0x00007ff8bcfc8000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff8beba0000 - 0x00007ff8beba8000 	C:\WINDOWS\System32\psapi.dll
+0x00007ff8be020000 - 0x00007ff8be04d000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff8bcd70000 - 0x00007ff8bcd96000 	C:\WINDOWS\system32\vmwsci.dll
+0x00007ff898800000 - 0x00007ff898835000 	C:\Program Files\CyberArk\Endpoint Privilege Manager\Agent\PASAgent\SFDP_Detours64.dll
+0x0000000073970000 - 0x0000000073a42000 	C:\Program Files\Java\jdk1.8.0_144\jre\bin\msvcr100.dll
+0x00000000730d0000 - 0x000000007396d000 	C:\Program Files\Java\jdk1.8.0_144\jre\bin\server\jvm.dll
+0x00007ff8a8b60000 - 0x00007ff8a8b69000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff8bebb0000 - 0x00007ff8bec1c000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff8b9920000 - 0x00007ff8b9943000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff8bbb30000 - 0x00007ff8bbb3a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff8b98c0000 - 0x00007ff8b98ea000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ff8bcfd0000 - 0x00007ff8bd01a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x0000000073be0000 - 0x0000000073bef000 	C:\Program Files\Java\jdk1.8.0_144\jre\bin\verify.dll
+0x0000000073bb0000 - 0x0000000073bd9000 	C:\Program Files\Java\jdk1.8.0_144\jre\bin\java.dll
+0x0000000073b90000 - 0x0000000073ba6000 	C:\Program Files\Java\jdk1.8.0_144\jre\bin\zip.dll
+
+VM Arguments:
+java_command: D:\MMA_Automation\WorkSpace New\ToolsQADemoSite\target\surefire\surefirebooter3976805783138770698.jar D:\MMA_Automation\WorkSpace New\ToolsQADemoSite\target\surefire\surefire547558670669701946tmp D:\MMA_Automation\WorkSpace New\ToolsQADemoSite\target\surefire\surefire_04591701214328205540tmp
+java_class_path (initial): D:\MMA_Automation\WorkSpace New\ToolsQADemoSite\target\surefire\surefirebooter3976805783138770698.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_144
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\Program Files\Common Files\ThinPrint\;C:\Program Files\Java\jdk1.8.0_144\bin;D:\MMA_Automation\apache-maven-3.6.0\bin;D:\Users\ashokpandian.s\AppData\Local\Microsoft\WindowsApps;
+USERNAME=ashokpandian.s
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 79 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 16299 (10.0.16299.1146)
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 79 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 6290996k(771348k free), swap 9436724k(5676k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.144-b01) for windows-amd64 JRE (1.8.0_144-b01), built on Jul 21 2017 21:57:33 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Mon Dec 23 18:48:18 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

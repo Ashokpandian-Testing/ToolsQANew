@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="9" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ToolsQA" duration-ms="57994" started-at="2019-12-23T18:26:50 IST" finished-at="2019-12-23T18:27:48 IST">
+    <groups>
+      <group name="Widgets">
+        <method signature="HomePage_TestCases.ClickWidgets_Verify()[pri:1, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickWidgets_Verify" class="TestCases.HomePage_TestCases"/>
+        <method signature="WidgetPage_TestCases.ClickAccordion_Verify()[pri:0, instance:TestCases.WidgetPage_TestCases@57855c9a]" name="ClickAccordion_Verify" class="TestCases.WidgetPage_TestCases"/>
+        <method signature="WidgetPage_TestCases.ClickAutocomplete_Verify(java.lang.String)[pri:1, instance:TestCases.WidgetPage_TestCases@57855c9a]" name="ClickAutocomplete_Verify" class="TestCases.WidgetPage_TestCases"/>
+      </group> <!-- Widgets -->
+      <group name="Accordion">
+        <method signature="WidgetPage_TestCases.ClickAccordion_Verify()[pri:0, instance:TestCases.WidgetPage_TestCases@57855c9a]" name="ClickAccordion_Verify" class="TestCases.WidgetPage_TestCases"/>
+      </group> <!-- Accordion -->
+      <group name="Tooltips">
+        <method signature="HomePage_TestCases.ClickTooltip_Verify()[pri:2, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickTooltip_Verify" class="TestCases.HomePage_TestCases"/>
+      </group> <!-- Tooltips -->
+      <group name="Links">
+        <method signature="HomePage_TestCases.ClickHome_Verify()[pri:3, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickHome_Verify" class="TestCases.HomePage_TestCases"/>
+        <method signature="HomePage_TestCases.ClickInteractions_Verify()[pri:0, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickInteractions_Verify" class="TestCases.HomePage_TestCases"/>
+        <method signature="HomePage_TestCases.ClickTooltip_Verify()[pri:2, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickTooltip_Verify" class="TestCases.HomePage_TestCases"/>
+        <method signature="HomePage_TestCases.ClickWidgets_Verify()[pri:1, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickWidgets_Verify" class="TestCases.HomePage_TestCases"/>
+      </group> <!-- Links -->
+      <group name="AutoComplete">
+        <method signature="WidgetPage_TestCases.ClickAutocomplete_Verify(java.lang.String)[pri:1, instance:TestCases.WidgetPage_TestCases@57855c9a]" name="ClickAutocomplete_Verify" class="TestCases.WidgetPage_TestCases"/>
+      </group> <!-- AutoComplete -->
+      <group name="Interactions">
+        <method signature="HomePage_TestCases.ClickInteractions_Verify()[pri:0, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickInteractions_Verify" class="TestCases.HomePage_TestCases"/>
+      </group> <!-- Interactions -->
+      <group name="Home">
+        <method signature="HomePage_TestCases.ClickHome_Verify()[pri:3, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickHome_Verify" class="TestCases.HomePage_TestCases"/>
+      </group> <!-- Home -->
+    </groups>
+    <test name="Regression Test" duration-ms="57994" started-at="2019-12-23T18:26:50 IST" finished-at="2019-12-23T18:27:48 IST">
+      <class name="TestCases.WidgetPage_TestCases">
+        <test-method status="PASS" signature="ClickAccordion_Verify()[pri:0, instance:TestCases.WidgetPage_TestCases@57855c9a]" name="ClickAccordion_Verify" duration-ms="19707" started-at="2019-12-23T18:27:16 IST" finished-at="2019-12-23T18:27:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickAccordion_Verify -->
+        <test-method status="PASS" signature="ClickAutocomplete_Verify(java.lang.String)[pri:1, instance:TestCases.WidgetPage_TestCases@57855c9a]" name="ClickAutocomplete_Verify" duration-ms="12312" started-at="2019-12-23T18:27:35 IST" finished-at="2019-12-23T18:27:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Apple]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickAutocomplete_Verify -->
+      </class> <!-- TestCases.WidgetPage_TestCases -->
+      <class name="TestCases.HomePage_TestCases">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:TestCases.HomePage_TestCases@3d99d22e]" name="LaunchBrowser" is-config="true" duration-ms="13004" started-at="2019-12-23T18:26:37 IST" finished-at="2019-12-23T18:26:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="LaunchApp()[pri:0, instance:TestCases.HomePage_TestCases@3d99d22e]" name="LaunchApp" is-config="true" duration-ms="8135" started-at="2019-12-23T18:26:50 IST" finished-at="2019-12-23T18:26:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method status="PASS" signature="ClickInteractions_Verify()[pri:0, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickInteractions_Verify" duration-ms="1312" started-at="2019-12-23T18:26:58 IST" finished-at="2019-12-23T18:26:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickInteractions_Verify -->
+        <test-method status="PASS" signature="ClickWidgets_Verify()[pri:1, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickWidgets_Verify" duration-ms="816" started-at="2019-12-23T18:26:59 IST" finished-at="2019-12-23T18:27:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickWidgets_Verify -->
+        <test-method status="PASS" signature="ClickTooltip_Verify()[pri:2, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickTooltip_Verify" duration-ms="3698" started-at="2019-12-23T18:27:00 IST" finished-at="2019-12-23T18:27:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickTooltip_Verify -->
+        <test-method status="PASS" signature="ClickHome_Verify()[pri:3, instance:TestCases.HomePage_TestCases@3d99d22e]" name="ClickHome_Verify" duration-ms="11961" started-at="2019-12-23T18:27:04 IST" finished-at="2019-12-23T18:27:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickHome_Verify -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestCases.HomePage_TestCases@3d99d22e]" name="TearDown" is-config="true" duration-ms="2070" started-at="2019-12-23T18:27:48 IST" finished-at="2019-12-23T18:27:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- TestCases.HomePage_TestCases -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- ToolsQA -->
+</testng-results>
